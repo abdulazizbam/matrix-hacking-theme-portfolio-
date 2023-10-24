@@ -30,16 +30,14 @@ const interval = setInterval(() => {
   });
 }, 80);
 
-let trigger = 0;
 
 menuItems.forEach((item) => {
   item.addEventListener("click", () => {
-
     if (item.classList.contains("active")) {
-      return; 
+      return;
     }
 
-    const activeItem = document.querySelector('.menu-item.active')
+    const activeItem = document.querySelector(".menu-item.active");
     if (activeItem) {
       activeItem.classList.remove("active");
     }
@@ -55,4 +53,3 @@ menuItems.forEach((item) => {
     });
   });
 });
-
