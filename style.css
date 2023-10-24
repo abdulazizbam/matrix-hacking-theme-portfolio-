@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Inconsolata', monospace;
+    color: rgb(0, 255, 0);
+    font-weight: normal;
+
+}
+
+.active{
+    text-decoration: underline;
+}
+
+
+main{
+    background: black;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.container{
+    position: fixed;
+    width: 100%;
+    height:  100%;
+    top: 0;
+    margin: 0 auto;
+    padding:  0 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+}
+
+.innerCon{
+    width: 90%;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.838);
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+}
+
+.background-text{
+    line-height: 20px;
+    color: rgb(0, 255, 0);
+    font-size: 20px;
+}
+
+.name{
+    font-weight:bold;
+}
+
+.title{
+    color: rgb(0, 255, 0);
+    font-size: 150px;
+    cursor:default;
+    margin:  0 auto;
+    font-weight:100;
+}
+
+.main-section{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.lift-side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.right-side{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.menu-item{
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-size: 35px;
+}
+
+.menu-item:hover{
+    transform: scale(1.1);
+}
+
+.about-me-title{
+    font-size: 50px ;
+    margin-bottom: 15px;
+}
+
+.about-me-text{
+    font-size: 22px;
+    max-width: 500px;
+}
+
+.skills{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.skills div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+}
+
+.skills div:hover{
+    transform: scale(1.1);
+}
+
+.skills div img{
+    max-width: 100px;
+}
+
+.skills div p{
+    font-size: 22px;
+}
+
+
+
+
+.invisible{
+    display: none;
+    visibility: hidden;
+}
