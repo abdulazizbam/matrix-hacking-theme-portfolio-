@@ -1,86 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-      integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400&family=Inconsolata:wght@200;300;400;500;600;900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400&family=Inconsolata:wght@200;300;400;500;600;900&display=swap"
+        rel="stylesheet" />
+</head>
 
-  <body>
+<body>
     <main id="background"></main>
     <div class="container">
-      <div class="innerCon">
-        <h1 class="title">&lt;AzizDev/&gt;</h1>
-        <div class="main-section">
-          <div class="lift-side">
-            <div class="menu">
-              <h2 class="menu-item active" id="about-me">about me</h2>
-              <h2 class="menu-item" id="skills">skills</h2>
-              <h2 class="menu-item">projects</h2>
-              <h2 class="menu-item" id="contacts">contacts</h2>
+        <div class="innerCon">
+            <h1 class="title">&lt;AzizDev/&gt;</h1>
+            <div class="main-section">
+                <div class="lift-side">
+                    <div class="menu">
+                        <h2 class="menu-item active" id="about-me">about</h2>
+                        <h2 class="menu-item" id="skills">skills</h2>
+                        <h2 class="menu-item" id="projects">projects</h2>
+                        <h2 class="menu-item" id="contacts">contacts</h2>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="about-me screen">
+                        <h1 class="about-me-title">about me</h1>
+                        <p class="about-me-text">
+                            Hey there! 👋 I'm Abdulaziz Nasser, a CS student with a deep
+                            love for design and web development. I'm all about turning ideas
+                            into functional websites 💡💻 <br />
+                            While I'm still on my journey in the web development world, I'm
+                            excited to learn and create I'm also always eager to take on new
+                            challenges. 🚀
+                        </p>
+                    </div>
+                    <div class="skills screen invisible">
+                        <div>
+                            <img src="react.svg" alt="" />
+                            <p>react</p>
+                        </div>
+                        <div>
+                            <img src="react.svg" alt="" />
+                            <p>react native</p>
+                        </div>
+                        <div>
+                            <img src="node.svg" alt="" />
+                            <p>node js</p>
+                        </div>
+                        <div>
+                            <img src="mongo.svg" alt="" />
+                            <p>mongodb</p>
+                        </div>
+                        <div>
+                            <img src="firebase.svg" alt="" />
+                            <p>firebase</p>
+                        </div>
+                        <div>
+                            <img src="tailwind.svg" alt="" />
+                            <p>tailwind</p>
+                        </div>
+                    </div>
+                    <div class="contacts screen invisible">
+                        <a href="https://github.com/abdulazizbam" target="_blank" rel="noopener noreferrer">
+                            <div>
+                                <h2>github</h2><img src="github.svg" alt="">
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/abdulaiz-ba-marhool-0b7196249/" target="_blank"
+                            rel="noopener noreferrer">
+                            <div>
+                                <h2>linkedin</h2><img src="linkedin.svg" alt="">
+                            </div>
+                        </a>
+
+                        <div>
+                            <h2>abdulziz.bamarhool@gmail.com</h2><img src="email.svg" alt="">
+                        </div>
+                        <div>
+                            <h2>feel free to contact me about anything at anytime, i don't bite 😊</h2>
+                        </div>
+
+                    </div>
+                    <div class="projects screen invisible">
+                        <div id="card-0" class="active-card card shope">
+                            <h1>ziz-shope</h1>
+                            <div>
+                                <img src="shope.png" alt="">
+                                <p><span>ziz-shope: </span>This e-commerce project uses React, Tailwind, and Firebase
+                                    for the frontend and backend. It offers features like
+                                    authentication, an admin panel, and a local storage-based shopping cart. It uses
+                                    Firestore Realtime
+                                    Database and Google Cloud Storage for data management, without integrated payment
+                                    methods for now.<br><span><a href="https://ecommerce-5c714.web.app/" target="_blank"
+                                        rel="noopener noreferrer">click here to test</a></span></p>
+                            </div>
+                        </div>
+                        <div id="card-1" class="invisible card  space">
+                            <h1>space-project</h1>
+                            <div>
+                            <img src="space.png" alt="">
+                            <p><span>space-project: </span>constructed with React and Tailwind, utilizes NASA's APIs for
+                                data retrieval. It features
+                                three main pages: Home Page, Space Image of the Day Page displaying a daily
+                                space image with a
+                                description, and the Near-Earth Objects Page, providing information on objects
+                                approaching Earth on the current day.<br><span><a href="https://myspaceproject.netlify.app/" target="_blank"
+                                    rel="noopener noreferrer">click here to test</a></span></p>
+                            </div>
+                        </div>
+                        <div class="arrow-con">
+                            <img class="invisible arrow" id="arrow-l" src="arrow-lift.svg"/> 
+                            <img class="arrow" id="arrow-r" src="arrow-right.svg" /> 
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="right-side">
-            <div class="about-me screen">
-              <h1 class="about-me-title">about me</h1>
-              <p class="about-me-text">
-                Hey there! 👋 I'm Abdulaziz Nasser, a CS student with a deep
-                love for design and web development. I'm all about turning ideas
-                into functional websites 💡💻 <br />
-                While I'm still on my journey in the web development world, I'm
-                excited to learn and create I'm also always eager to take on new
-                challenges. 🚀
-              </p>
-            </div>
-            <div class="skills screen invisible">
-              <div>
-                <img src="react.svg" alt="" />
-                <p>react</p>
-              </div>
-              <div>
-                <img src="react.svg" alt="" />
-                <p>react native</p>
-              </div>
-              <div>
-                <img src="node.svg" alt="" />
-                <p>node js</p>
-              </div>
-              <div>
-                <img src="mongo.svg" alt="" />
-                <p>mongodb</p>
-              </div>
-              <div>
-                <img src="firebase.svg" alt="" />
-                <p>firebase</p>
-              </div>
-              <div>
-                <img src="tailwind.svg" alt="" />
-                <p>tailwind</p>
-              </div>
-            </div>
-            <div class="contacts"></div>
-          </div>
         </div>
-      </div>
-    </div>
-  </body>
-  <script src="app.js"></script>
+</body>
+<script src="app.js"></script>
+
 </html>

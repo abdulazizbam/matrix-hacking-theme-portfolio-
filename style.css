@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -9,12 +9,16 @@
 
 }
 
-.active{
+main {
+    overflow: hidden;
+}
+
+.active {
     text-decoration: underline;
 }
 
 
-main{
+main {
     background: black;
     height: 100vh;
     width: 100%;
@@ -24,48 +28,52 @@ main{
     justify-content: flex-start;
 }
 
-.container{
+.container {
     position: fixed;
     width: 100%;
-    height:  100%;
+    height: 100%;
     top: 0;
     margin: 0 auto;
-    padding:  0 20;
+    padding: 0 20;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: scroll;
+    overflow: hidden;
 }
 
-.innerCon{
+.innerCon {
     width: 90%;
     height: 90%;
-    background-color: rgba(0, 0, 0, 0.838);
-    overflow: scroll;
+    background-color: rgba(0, 0, 0, 0.888);
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    padding: 0 15px;
+    padding: 0 10px;
+    border-width: 5px;
+    border-color: rgb(0, 255, 0);
+    border-style: solid;
+
 }
 
-.background-text{
-    line-height: 20px;
+.background-text {
+    line-height: 35px;
     color: rgb(0, 255, 0);
-    font-size: 20px;
+    font-size: 25px;
 }
 
-.name{
-    font-weight:bold;
+.name {
+    font-weight: bold;
 }
 
-.title{
+.title {
     color: rgb(0, 255, 0);
     font-size: 150px;
-    cursor:default;
-    margin:  0 auto;
-    font-weight:100;
+    cursor: default;
+    margin: 0 auto;
+    font-weight: 100;
 }
 
-.main-section{
+.main-section {
     display: flex;
     flex-direction: row;
     height: 100%;
@@ -73,76 +81,347 @@ main{
     justify-content: center;
 }
 
-.lift-side{
+.lift-side {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
-    width: 100%;
+    width: 30%;
 }
 
-.right-side{
+.right-side {
     display: flex;
     height: 100%;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 70%;
 }
 
 
-.menu-item{
+.menu-item {
     cursor: pointer;
     margin-bottom: 20px;
     font-weight: normal;
     font-size: 35px;
 }
 
-.menu-item:hover{
+.menu-item:hover {
     transform: scale(1.1);
 }
 
-.about-me-title{
-    font-size: 50px ;
+.about-me-title {
+    font-size: 50px;
     margin-bottom: 15px;
 }
 
-.about-me-text{
+.about-me-text {
     font-size: 22px;
     max-width: 500px;
 }
 
-.skills{
+.skills {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
     flex-wrap: wrap;
 }
 
-.skills div{
+.skills div {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 200px;
+    margin-top: 20px;
 }
 
-.skills div:hover{
+.skills div:hover {
     transform: scale(1.1);
 }
 
-.skills div img{
+.skills div img {
     max-width: 100px;
 }
 
-.skills div p{
+.skills div p {
     font-size: 22px;
 }
 
 
+.contacts {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 40px;
+}
+
+.contacts div {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contacts div img {
+    max-width: 35px;
+}
+
+.contacts div h2 {
+    font-size: 27px;
+}
 
 
-.invisible{
+.projects {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card h1 {
+    font-size: 35px;
+    font-weight: bold;
+    padding: 3px;
+    background-color: rgb(0, 255, 0);
+    color: black;
+}
+
+.card div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px
+}
+
+.projects p {
+    font-size: 22px;
+}
+
+.projects p span {
+    font-weight: bold;
+}
+
+.projects img {
+    max-width: 40%;
+    max-height: 85%;
+}
+
+.projects a {
+    text-decoration: none;
+}
+
+.projects span a {
+    padding: 0 2px;
+    background-color: rgb(0, 255, 0);
+    color: black;
+}
+
+.arrow {
+    cursor: pointer;
+}
+
+.arrow-con {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.arrow-con img {
+    width: 120px;
+}
+
+
+
+.invisible {
     display: none;
     visibility: hidden;
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+    .title {
+        font-size: 55px;
+    }
+
+
+    .innerCon {
+        width: 98%;
+        height: 96%;
+        border-width: 3px;
+        padding: 0 5px;
+    }
+
+    .main-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .lift-side {
+        width: 100%;
+        max-height: 50px;
+    }
+
+
+    .menu {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .menu-item {
+        font-size: 20px;
+        padding: 0;
+    }
+
+    .right-side {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+
+    .about-me {
+        padding: 0 10px;
+    }
+
+    .about-me-text {
+        font-size: 20px;
+    }
+
+    .about-me-title {
+        font-size: 50px;
+    }
+
+    .skills {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .skills div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+
+    }
+
+    .skills div:hover {
+        transform: scale(1.1);
+    }
+
+    .skills div img {
+        max-width: 100px;
+    }
+
+    .skills div p {
+        font-size: 20px;
+    }
+
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 5px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .card h1 {
+        display: none;
+        visibility: hidden;
+
+    }
+
+    .card div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px
+    }
+
+    .projects p {
+        font-size: 18px;
+    }
+
+
+    .projects img {
+        max-width: 100%;
+        width: 250px;
+
+    }
+
+
+    .arrow-con img {
+        width: 55px;
+        height: 40px;
+    }
+
+    .contacts {
+        justify-content: flex-start;
+        height: 100%;
+        gap: 30px;
+        padding: 0 5px;
+    }
+
+    .contacts div {
+        flex-direction: column-reverse;
+        gap: 5px;
+    }
+
+    .contacts div img {
+        max-width: 35px;
+    }
+
+    .contacts div h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+
+    .invisible {
+        display: none;
+        visibility: hidden;
+    }
+
 }
