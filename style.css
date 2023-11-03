@@ -44,7 +44,7 @@ main {
 .innerCon {
     width: 90%;
     height: 90%;
-    background-color: rgba(0, 0, 0, 0.888);
+    background-color: rgba(0, 0, 0, 0.792);
     overflow: hidden;
     display: flex;
     flex-direction: column;
